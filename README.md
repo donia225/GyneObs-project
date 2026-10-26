@@ -1,11 +1,11 @@
 # Git Workflow Guidelines :
 This document explains how to use Git and Github to collaborate on the GyneObs project.
 
-# Clone the repository :
+1) Clone the repository :
 Clone the project to your local machine
 git clone <repository-url>
 
-# Create a new branch :
+2) Create a new branch :
 Each feature or bug fix must be developed in a separate branch.
 Before creating a branch, make sure your local main branch is up to date:
 -> git switch main
@@ -22,7 +22,7 @@ feature/patient-management — New feature
 fix/patient-search — Bug fix
 refactor/patient-service — Code refactoring
 
-# Commit messages :
+3) Commit messages :
 After making changes, stage your files:
 git add .
 
