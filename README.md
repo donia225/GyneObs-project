@@ -3,7 +3,7 @@ This document explains how to use Git and Github to collaborate on the GyneObs p
 
 1) Clone the repository :
 Clone the project to your local machine
-git clone <repository-url>
+git clone <repositoryurl>
 
 2) Create a new branch :
 Each feature or bug fix must be developed in a separate branch.
