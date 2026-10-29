@@ -25,18 +25,18 @@ git pull origin main
 ### Create a New Branch
 
 ```bash
-git branch feature/patient-management
+git branch feature/patient
 ```
 
 ### Switch to the New Branch
 
 ```bash
-git switch feature/patient-management
+git switch feature/patient
 ```
 
 ### Branch Naming Conventions
 
-- `feature/patient-management` — New feature
+- `feature/patient` — New feature
 - `fix/patient-search` — Bug fix
 - `refactor/patient-service` — Code refactoring
 
@@ -75,11 +75,18 @@ git commit -m "docs: update README"
 ```
 
 ## 4. Push Changes to GitHub
+Before pushing, make sure your local branch is up to date with its remote branch, if it already exists.
+Example : You are working on a local branch called feature/patient. If the same branch exists on GitHub and contains new changes that you don't have locally, you should pull those changes before pushing your code.
+```bash
+git pull --rebase
+```
+
+**Note:** For a new branch that has not been pushed yet, skip this step.
 
 Push your branch to GitHub for the first time:
 
 ```bash
-git push -u origin feature/patient-management
+git push -u origin feature/patient
 ```
 
 For subsequent pushes:
