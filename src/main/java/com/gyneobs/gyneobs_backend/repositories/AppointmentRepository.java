@@ -1,5 +1,12 @@
 package com.gyneobs.gyneobs_backend.repositories;
 
-public interface AppointmentRepository {
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.gyneobs.gyneobs_backend.entities.Appointment;
+
+public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
+
 
 }

@@ -10,9 +10,16 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
+
 
 @Entity
 @Table(name = "appointments")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Appointment {
 
     @Id
@@ -24,43 +31,9 @@ public class Appointment {
     @Enumerated(EnumType.STRING)
     private AppointmentStatus status;
 
-    public Appointment() {
-    }
+   
 
-    public Appointment(LocalDateTime appointmentDateTime, AppointmentStatus status) {
-        this.appointmentDateTime = appointmentDateTime;
-        this.status = status;
-    }
 
-    public Appointment(Long id, LocalDateTime appointmentDateTime, AppointmentStatus status) {
-        this.id = id;
-        this.appointmentDateTime = appointmentDateTime;
-        this.status = status;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public LocalDateTime getAppointmentDateTime() {
-        return appointmentDateTime;
-    }
-
-    public void setAppointmentDateTime(LocalDateTime appointmentDateTime) {
-        this.appointmentDateTime = appointmentDateTime;
-    }
-
-    public AppointmentStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(AppointmentStatus status) {
-        this.status = status;
-    }
 
     
 }
